@@ -1,0 +1,4 @@
+[debug] [scala-concurrency-examples-build] Classpath dependencies List()
+[debug] [scala-concurrency-examples-build] Dependencies from configurations List()
+[debug] Bloop wrote the configuration of project 'scala-concurrency-examples-build' to '/home/vitalis/repos/scala-concurrency-examples/project/.bloop/scala-concurrency-examples-build.json'
+[success] Generated .bloop/scala-concurrency-examples-build.json
