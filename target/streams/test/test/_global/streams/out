@@ -1,0 +1,33 @@
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(org.learningconcurrency.RangeBenchmark, sbt.SubclassFingerprintWrapper@5ca9ee64, false, [SuiteSelector])[0m[0J
+[0m[[0m[0minfo[0m] [0m[0m::Benchmark Range.map::[0m[0J
+[0m[[0m[0minfo[0m] [0m[0mcores: 2[0m[0J
+[0m[[0m[0minfo[0m] [0m[0mhostname: lambda[0m[0J
+[0m[[0m[0minfo[0m] [0m[0mname: OpenJDK 64-Bit Server VM[0m[0J
+[0m[[0m[0minfo[0m] [0m[0mosArch: amd64[0m[0J
+[0m[[0m[0minfo[0m] [0m[0mosName: Linux[0m[0J
+[0m[[0m[0minfo[0m] [0m[0mvendor: Ubuntu[0m[0J
+[0m[[0m[0minfo[0m] [0m[0mversion: 11.0.9.1+1-Ubuntu-0ubuntu1.18.04[0m[0J
+[0m[[0m[0minfo[0m] [0m[0mParameters(size -> 300000): 3.81278 ms[0m[0J
+[0m[[0m[0minfo[0m] [0m[0mParameters(size -> 600000): 7.639937 ms[0m[0J
+[0m[[0m[0minfo[0m] [0m[0mParameters(size -> 900000): 11.423836 ms[0m[0J
+[0m[[0m[0minfo[0m] [0m[0mParameters(size -> 1200000): 15.18433 ms[0m[0J
+[0m[[0m[0minfo[0m] [0m[0mParameters(size -> 1500000): 19.012012 ms[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(org.learningconcurrency.ModifiedRangeBenchmark, sbt.SubclassFingerprintWrapper@5ca9ee64, false, [SuiteSelector])[0m[0J
+[0m[[0m[0minfo[0m] [0m[0m::Benchmark RangeTwo.mapTwo::[0m[0J
+[0m[[0m[0minfo[0m] [0m[0mcores: 2[0m[0J
+[0m[[0m[0minfo[0m] [0m[0mhostname: lambda[0m[0J
+[0m[[0m[0minfo[0m] [0m[0mname: OpenJDK 64-Bit Server VM[0m[0J
+[0m[[0m[0minfo[0m] [0m[0mosArch: amd64[0m[0J
+[0m[[0m[0minfo[0m] [0m[0mosName: Linux[0m[0J
+[0m[[0m[0minfo[0m] [0m[0mvendor: Ubuntu[0m[0J
+[0m[[0m[0minfo[0m] [0m[0mversion: 11.0.9.1+1-Ubuntu-0ubuntu1.18.04[0m[0J
+[0m[[0m[0minfo[0m] [0m[0mParameters(size -> 300000): 5.955398 ms[0m[0J
+[0m[[0m[0minfo[0m] [0m[0mParameters(size -> 600000): 11.888238 ms[0m[0J
+[0m[[0m[0minfo[0m] [0m[0mParameters(size -> 900000): 17.83384 ms[0m[0J
+[0m[[0m[0minfo[0m] [0m[0mParameters(size -> 1200000): 23.778984 ms[0m[0J
+[0m[[0m[0minfo[0m] [0m[0mParameters(size -> 1500000): 29.695324 ms[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0mSummary for ScalaMeter not available.[0m[0J
+[0m[[0m[0minfo[0m] [0m[0mPassed: Total 0, Failed 0, Errors 0, Passed 0[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	org.learningconcurrency.ModifiedRangeBenchmark[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	org.learningconcurrency.RangeBenchmark[0m[0J
