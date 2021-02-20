@@ -2329,3 +2329,93 @@ Starting thread that pumps server stdout and redirects it to the client stdout..
 2021.02.20 08:32:22 INFO  time: compiled scala-concurrency-examples in 21s
 2021.02.20 08:59:20 INFO  compiling scala-concurrency-examples (1 scala source)
 2021.02.20 08:59:23 INFO  time: compiled scala-concurrency-examples in 3.05s
+2021.02.20 09:17:04 INFO  compiling scala-concurrency-examples (1 scala source)
+2021.02.20 09:17:05 INFO  time: compiled scala-concurrency-examples in 1.68s
+2021.02.20 09:17:53 INFO  shutting down Metals
+2021.02.20 09:17:53 INFO  Shut down connection with build server.
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+2021.02.20 09:17:53 INFO  Shut down connection with build server.
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+Feb 20, 2021 9:17:53 AM io.undertow.Undertow stop
+INFO: stopping server: Undertow - 2.2.3.Final
+2021.02.20 09:18:07 INFO  Started: Metals version 0.9.8 in workspace '/home/vitalis/repos/scala-concurrency-examples' for client sublime.
+2021.02.20 09:18:10 INFO  time: initialize in 3.02s
+2021.02.20 09:18:12 INFO  Attempting to connect to the build server...
+2021.02.20 09:18:12 INFO  Selected port 5031
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher10632587175830706321/bsp.socket'...
+Waiting for the bsp connection to come up...
+2021.02.20 09:18:12 WARN  no build target for: /home/vitalis/repos/scala-concurrency-examples/src/main/scala/org/learningconcurrency/AtomicPrimitives.scala
+Feb 20, 2021 9:18:12 AM io.undertow.Undertow start
+INFO: starting server: Undertow - 2.2.3.Final
+Feb 20, 2021 9:18:12 AM org.xnio.Xnio <clinit>
+INFO: XNIO version 3.8.4.Final
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher10632587175830706321/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher10632587175830706321/bsp.socket...
+2021.02.20 09:18:12 INFO  skipping build import with status 'Installed'
+Feb 20, 2021 9:18:12 AM org.xnio.nio.NioXnio <clinit>
+INFO: XNIO NIO Implementation Version 3.8.4.Final
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2021.02.20 09:18:13 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/vitalis/.cache/metals/bsp.trace.json
+2021.02.20 09:18:13 INFO  Attempting to connect to the build server...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher14292586176243734723/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher14292586176243734723/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher14292586176243734723/bsp.socket...
+Feb 20, 2021 9:18:13 AM org.jboss.threads.Version <clinit>
+INFO: JBoss Threads version 3.1.0.Final
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2021.02.20 09:18:13 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/vitalis/.cache/metals/bsp.trace.json
+2021.02.20 09:18:13 INFO  time: connected to build server in 1.18s
+2021.02.20 09:18:13 INFO  Connected to Build server v1.4.6-15-209c2a5c
+2021.02.20 09:18:13 INFO  Started Metals http server at http://127.0.0.1:5031
+2021.02.20 09:18:13 INFO  time: imported build in 0.17s
+2021.02.20 09:18:19 WARN  Could not find java sources in None. Java symbols will not be available.
+2021.02.20 09:18:19 WARN  Old frameworks are not supported: org.scalameter.ScalaMeterFramework
+2021.02.20 09:18:19 INFO  time: indexed workspace in 6.26s
+2021.02.20 09:18:25 INFO  compiling scala-concurrency-examples-test (3 scala sources)
+2021.02.20 09:18:25 WARN  there was one deprecation warning (since 0.16)
+2021.02.20 09:18:25 WARN  there was one deprecation warning (since 2.13.0)
+2021.02.20 09:18:25 WARN  there were two deprecation warnings in total; re-run with -deprecation for details
+2021.02.20 09:18:25 INFO  time: compiled scala-concurrency-examples-test in 46ms
+2021.02.20 09:18:25 WARN  Old frameworks are not supported: org.scalameter.ScalaMeterFramework
+2021.02.20 09:19:12 INFO  compiling scala-concurrency-examples (1 scala source)
+2021.02.20 09:19:14 INFO  time: compiled scala-concurrency-examples in 1.68s
+2021.02.20 09:20:45 INFO  compiling scala-concurrency-examples (1 scala source)
+2021.02.20 09:20:47 INFO  time: compiled scala-concurrency-examples in 2.17s
+2021.02.20 09:21:36 INFO  compiling scala-concurrency-examples (1 scala source)
+2021.02.20 09:21:37 INFO  time: compiled scala-concurrency-examples in 1.62s
+2021.02.20 09:22:38 INFO  compiling scala-concurrency-examples (1 scala source)
+2021.02.20 09:22:40 INFO  time: compiled scala-concurrency-examples in 1.83s
+2021.02.20 09:22:51 INFO  compiling scala-concurrency-examples (1 scala source)
+2021.02.20 09:22:53 INFO  time: compiled scala-concurrency-examples in 1.42s
+2021.02.20 09:23:49 INFO  compiling scala-concurrency-examples (1 scala source)
+2021.02.20 09:23:51 INFO  time: compiled scala-concurrency-examples in 1.38s
+2021.02.20 09:23:52 INFO  compiling scala-concurrency-examples (1 scala source)
+2021.02.20 09:23:53 WARN  there were two deprecation warnings (since 2.13.0); re-run with -deprecation for details
+2021.02.20 09:23:53 INFO  time: compiled scala-concurrency-examples in 1.45s
+2021.02.20 09:23:53 INFO  compiling scala-concurrency-examples (1 scala source)
+2021.02.20 09:23:53 INFO  time: compiled scala-concurrency-examples in 0.61s
+2021.02.20 09:24:07 INFO  compiling scala-concurrency-examples (1 scala source)
+2021.02.20 09:24:08 INFO  time: compiled scala-concurrency-examples in 1.21s
+2021.02.20 09:24:22 INFO  compiling scala-concurrency-examples (1 scala source)
+2021.02.20 09:24:23 INFO  time: compiled scala-concurrency-examples in 1.28s
+2021.02.20 09:24:37 INFO  compiling scala-concurrency-examples (1 scala source)
+2021.02.20 09:24:39 INFO  time: compiled scala-concurrency-examples in 1.58s
+2021.02.20 09:25:13 INFO  compiling scala-concurrency-examples (1 scala source)
+2021.02.20 09:25:15 INFO  time: compiled scala-concurrency-examples in 2.4s
+2021.02.20 09:25:54 INFO  compiling scala-concurrency-examples (1 scala source)
+2021.02.20 09:25:54 INFO  time: compiled scala-concurrency-examples in 0.4s
+2021.02.20 09:26:02 INFO  compiling scala-concurrency-examples (1 scala source)
+2021.02.20 09:26:04 INFO  time: compiled scala-concurrency-examples in 1.74s
+2021.02.20 09:28:03 INFO  compiling scala-concurrency-examples (1 scala source)
+2021.02.20 09:28:06 INFO  time: compiled scala-concurrency-examples in 2.08s
+2021.02.20 09:29:14 INFO  compiling scala-concurrency-examples (1 scala source)
+2021.02.20 09:29:15 INFO  time: compiled scala-concurrency-examples in 1.54s

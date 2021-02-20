@@ -8,28 +8,28 @@ import scala.collection._
 //Running this example again should stop the 'worker' thread as soon as the main thread completes its execution.
 
 object SynchronizedBadPool extends App {
-	private val tasks = mutable.Queue[() => Unit]()
+  private val tasks = mutable.Queue[() => Unit]()
 
-	val worker = new Thread {
-		def pool(): Option[() => Unit] = tasks.synchronized {
-			if (tasks.nonEmpty) Some(tasks.dequeue()) else None
-		}
+  val worker = new Thread {
+    def pool(): Option[() => Unit] = tasks.synchronized {
+      if (tasks.nonEmpty) Some(tasks.dequeue()) else None
+    }
 
-		override def run() = while(true) pool() match {
-			case Some(task) => task()
-			case None => 
-		}
-	}
+    override def run() = while(true) pool() match {
+      case Some(task) => task()
+      case None => 
+    }
+  }
 
-	worker.setName("Worker")
-	worker.setDaemon(true)
-	worker.start()
+  worker.setName("Worker")
+  worker.setDaemon(true)
+  worker.start()
 
-	def asynchronous(body: => Unit) = tasks.synchronized {
-		tasks.enqueue(() => body)
-	}
+  def asynchronous(body: => Unit) = tasks.synchronized {
+    tasks.enqueue(() => body)
+  }
 
-	asynchronous({ log("Hello") })
-	asynchronous({ log("world!") })
-	Thread.sleep(5000)
+  asynchronous({ log("Hello") })
+  asynchronous({ log("world!") })
+  Thread.sleep(5000)
 }

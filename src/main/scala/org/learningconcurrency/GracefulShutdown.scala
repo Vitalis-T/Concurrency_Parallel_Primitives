@@ -7,35 +7,35 @@ import scala.collection._
 
 object GracefulShutdown extends App {
 
-	private val tasks = mutable.Queue[() => Unit]()
-	object Worker extends Thread {
-		var terminated = false
-		def pool(): Option[() => Unit] = tasks.synchronized {
-			while (tasks.isEmpty && !terminated) tasks.wait()
-			if (!terminated) Some(tasks.dequeue()) else None
-		}
+  private val tasks = mutable.Queue[() => Unit]()
+  object Worker extends Thread {
+    var terminated = false
+    def pool(): Option[() => Unit] = tasks.synchronized {
+      while (tasks.isEmpty && !terminated) tasks.wait()
+      if (!terminated) Some(tasks.dequeue()) else None
+    }
 
-		import scala.annotation.tailrec
-		@tailrec override def run() = pool() match {
-			case Some(task) => task(); run()
-			case None => 
-		}
+    import scala.annotation.tailrec
+    @tailrec override def run() = pool() match {
+      case Some(task) => task(); run()
+      case None => 
+    }
 
-		def shutdown() = tasks.synchronized {
-			terminated = true
-			tasks.notify()
-		}		
-	}
+    def shutdown() = tasks.synchronized {
+      terminated = true
+      tasks.notify()
+    }   
+  }
 
-	Worker.start()
+  Worker.start()
 
-	def asynchronous(body: => Unit) = tasks.synchronized {
-		tasks.enqueue(() => body)
-		tasks.notify()
-	}
-	asynchronous { log("Hello") }
-	asynchronous { log("Vitalis!") }
-	Thread.sleep(500)
-	Worker.shutdown()
-	
+  def asynchronous(body: => Unit) = tasks.synchronized {
+    tasks.enqueue(() => body)
+    tasks.notify()
+  }
+  asynchronous { log("Hello") }
+  asynchronous { log("Vitalis!") }
+  Thread.sleep(500)
+  Worker.shutdown()
+  
 }

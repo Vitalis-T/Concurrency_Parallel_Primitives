@@ -4,15 +4,15 @@ import java.util.concurrent.ForkJoinPool
 import java.util.concurrent.TimeUnit
 
 object ExecutorsCreate extends App {
-	val executor = new ForkJoinPool
-	executor.execute(new Runnable {
-		def run() = log("This task is run asynchronously.")
-	})
-	Thread.sleep(500)
-	log("It's a main thread of this application")
-	// The 'shutdown' method makes sure that the 'Executor' object gracefully terminates by executing
-	// all the submitted tasks and then stopping all the worker threads.
-	executor.shutdown()
+  val executor = new ForkJoinPool
+  executor.execute(new Runnable {
+    def run() = log("This task is run asynchronously.")
+  })
+  Thread.sleep(500)
+  log("It's a main thread of this application")
+  // The 'shutdown' method makes sure that the 'Executor' object gracefully terminates by executing
+  // all the submitted tasks and then stopping all the worker threads.
+  executor.shutdown()
 }
 
 
@@ -23,22 +23,22 @@ object ExecutorsCreate extends App {
 // which internally uses a 'ForkJoinPool' instance.
 
 object ExecutionContextGlobal extends App {
-	val ectx = ExecutionContext.global
-	ectx.execute(new Runnable {
-		def run() = 
-			log("Running on the execution context")
-	})
+  val ectx = ExecutionContext.global
+  ectx.execute(new Runnable {
+    def run() = 
+      log("Running on the execution context")
+  })
 }
 
 /* The ExecutionContext companion object defines a pair of methods, 'fromExecutor' and
 'fromExecutorService' , which create an ExecutionContext object from an Executor or
 ExecutorService interface, respectively */
 object ExecutionContextCreateFrom extends App {
-	val pool = new ForkJoinPool(2)
-	val ectx = ExecutionContext.fromExecutorService(pool)
-	ectx.execute(new Runnable {
-		def run() = 
-			log("Running on the execution context again")
-	})
-	Thread.sleep(1000)
+  val pool = new ForkJoinPool(2)
+  val ectx = ExecutionContext.fromExecutorService(pool)
+  ectx.execute(new Runnable {
+    def run() = 
+      log("Running on the execution context again")
+  })
+  Thread.sleep(1000)
 }
