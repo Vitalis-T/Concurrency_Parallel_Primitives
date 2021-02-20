@@ -2327,3 +2327,5 @@ Starting thread that pumps server stdout and redirects it to the client stdout..
 2021.02.20 08:32:02 INFO  compiling scala-concurrency-examples (18 scala sources)
 2021.02.20 08:32:22 WARN  there were two deprecation warnings (since 2.13.0); re-run with -deprecation for details
 2021.02.20 08:32:22 INFO  time: compiled scala-concurrency-examples in 21s
+2021.02.20 08:59:20 INFO  compiling scala-concurrency-examples (1 scala source)
+2021.02.20 08:59:23 INFO  time: compiled scala-concurrency-examples in 3.05s
