@@ -2419,3 +2419,55 @@ Starting thread that pumps server stdout and redirects it to the client stdout..
 2021.02.20 09:28:06 INFO  time: compiled scala-concurrency-examples in 2.08s
 2021.02.20 09:29:14 INFO  compiling scala-concurrency-examples (1 scala source)
 2021.02.20 09:29:15 INFO  time: compiled scala-concurrency-examples in 1.54s
+2021.02.20 11:35:13 INFO  Started: Metals version 0.9.8 in workspace '/home/vitalis/repos/scala-concurrency-examples' for client sublime.
+2021.02.20 11:35:16 INFO  time: initialize in 3.48s
+2021.02.20 11:35:18 INFO  Attempting to connect to the build server...
+2021.02.20 11:35:18 INFO  Selected port 5031
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher14785876906637265308/bsp.socket'...
+Waiting for the bsp connection to come up...
+2021.02.20 11:35:18 WARN  no build target for: /home/vitalis/repos/scala-concurrency-examples/src/main/scala/org/learningconcurrency/FileManager.scala
+Feb 20, 2021 11:35:18 AM io.undertow.Undertow start
+INFO: starting server: Undertow - 2.2.3.Final
+Feb 20, 2021 11:35:18 AM org.xnio.Xnio <clinit>
+INFO: XNIO version 3.8.4.Final
+Feb 20, 2021 11:35:18 AM org.xnio.nio.NioXnio <clinit>
+INFO: XNIO NIO Implementation Version 3.8.4.Final
+2021.02.20 11:35:18 INFO  skipping build import with status 'Installed'
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher14785876906637265308/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher14785876906637265308/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2021.02.20 11:35:19 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/vitalis/.cache/metals/bsp.trace.json
+2021.02.20 11:35:19 INFO  Attempting to connect to the build server...
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher17930160742182972612/bsp.socket'...
+Waiting for the bsp connection to come up...
+Feb 20, 2021 11:35:19 AM org.jboss.threads.Version <clinit>
+INFO: JBoss Threads version 3.1.0.Final
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher17930160742182972612/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher17930160742182972612/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2021.02.20 11:35:19 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/vitalis/.cache/metals/bsp.trace.json
+2021.02.20 11:35:19 INFO  time: connected to build server in 1.54s
+2021.02.20 11:35:19 INFO  Connected to Build server v1.4.6-15-209c2a5c
+2021.02.20 11:35:20 INFO  Started Metals http server at http://127.0.0.1:5031
+2021.02.20 11:35:20 INFO  time: imported build in 0.2s
+2021.02.20 11:35:26 WARN  Could not find java sources in None. Java symbols will not be available.
+2021.02.20 11:35:27 INFO  time: indexed workspace in 7.43s
+2021.02.20 11:35:27 WARN  Old frameworks are not supported: org.scalameter.ScalaMeterFramework
+2021.02.20 11:35:31 WARN  Old frameworks are not supported: org.scalameter.ScalaMeterFramework
+2021.02.20 11:35:33 WARN  Old frameworks are not supported: org.scalameter.ScalaMeterFramework
+2021.02.20 11:35:35 WARN  Old frameworks are not supported: org.scalameter.ScalaMeterFramework
+2021.02.20 11:35:37 WARN  Old frameworks are not supported: org.scalameter.ScalaMeterFramework
+2021.02.20 11:35:39 WARN  Old frameworks are not supported: org.scalameter.ScalaMeterFramework
+2021.02.20 11:35:41 WARN  Old frameworks are not supported: org.scalameter.ScalaMeterFramework
+2021.02.20 11:35:45 WARN  Old frameworks are not supported: org.scalameter.ScalaMeterFramework
+2021.02.20 11:35:48 WARN  Old frameworks are not supported: org.scalameter.ScalaMeterFramework
+2021.02.20 11:36:35 INFO  compiling scala-concurrency-examples (1 scala source)
+2021.02.20 11:36:37 INFO  time: compiled scala-concurrency-examples in 1.52s
+2021.02.20 11:38:28 INFO  compiling scala-concurrency-examples (1 scala source)
+2021.02.20 11:38:29 INFO  time: compiled scala-concurrency-examples in 1.13s
