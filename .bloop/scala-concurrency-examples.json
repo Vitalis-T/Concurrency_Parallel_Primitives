@@ -1,0 +1,170 @@
+{
+    "version": "1.4.0",
+    "project": {
+        "name": "scala-concurrency-examples",
+        "directory": "/home/vitalis/repos/scala-concurrency-examples",
+        "workspaceDir": "/home/vitalis/repos/scala-concurrency-examples",
+        "sources": [
+            "/home/vitalis/repos/scala-concurrency-examples/src/main/scala",
+            "/home/vitalis/repos/scala-concurrency-examples/src/main/scala-2.13",
+            "/home/vitalis/repos/scala-concurrency-examples/src/main/scala-2",
+            "/home/vitalis/repos/scala-concurrency-examples/src/main/java",
+            "/home/vitalis/repos/scala-concurrency-examples/target/scala-2.13/src_managed/main"
+        ],
+        "dependencies": [
+            
+        ],
+        "classpath": [
+            "/home/vitalis/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.0/scala-library-2.13.0.jar",
+            "/home/vitalis/.cache/coursier/v1/https/repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4.jar"
+        ],
+        "out": "/home/vitalis/repos/scala-concurrency-examples/.bloop/scala-concurrency-examples",
+        "classesDir": "/home/vitalis/repos/scala-concurrency-examples/.bloop/scala-concurrency-examples/scala-2.13/classes",
+        "resources": [
+            "/home/vitalis/repos/scala-concurrency-examples/src/main/resources",
+            "/home/vitalis/repos/scala-concurrency-examples/target/scala-2.13/resource_managed/main"
+        ],
+        "scala": {
+            "organization": "org.scala-lang",
+            "name": "scala-compiler",
+            "version": "2.13.0",
+            "options": [
+                
+            ],
+            "jars": [
+                "/home/vitalis/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.0/scala-compiler-2.13.0.jar",
+                "/home/vitalis/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.0/scala-library-2.13.0.jar",
+                "/home/vitalis/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.0/scala-reflect-2.13.0.jar",
+                "/home/vitalis/.cache/coursier/v1/https/repo1.maven.org/maven2/jline/jline/2.14.6/jline-2.14.6.jar"
+            ],
+            "analysis": "/home/vitalis/repos/scala-concurrency-examples/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.13.zip",
+            "setup": {
+                "order": "mixed",
+                "addLibraryToBootClasspath": true,
+                "addCompilerToClasspath": false,
+                "addExtraJarsToClasspath": false,
+                "manageBootClasspath": true,
+                "filterLibraryFromClasspath": true
+            }
+        },
+        "java": {
+            "options": [
+                
+            ]
+        },
+        "test": {
+            "frameworks": [
+                {
+                    "names": [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalameter.ScalaMeterFramework"
+                    ]
+                }
+            ],
+            "options": {
+                "excludes": [
+                    
+                ],
+                "arguments": [
+                    
+                ]
+            }
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "/usr/lib/jvm/java-11-openjdk-amd64",
+                "options": [
+                    "-Duser.dir=/home/vitalis/repos/scala-concurrency-examples"
+                ]
+            },
+            "mainClass": [
+                
+            ]
+        },
+        "resolution": {
+            "modules": [
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.13.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "/home/vitalis/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.0/scala-library-2.13.0.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "/home/vitalis/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.0/scala-library-2.13.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "commons-io",
+                    "name": "commons-io",
+                    "version": "2.4",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "commons-io",
+                            "path": "/home/vitalis/.cache/coursier/v1/https/repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4.jar"
+                        },
+                        {
+                            "name": "commons-io",
+                            "classifier": "sources",
+                            "path": "/home/vitalis/.cache/coursier/v1/https/repo1.maven.org/maven2/commons-io/commons-io/2.4/commons-io-2.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.13.0",
+                    "configurations": "optional",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "path": "/home/vitalis/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.0/scala-library-2.13.0.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "path": "/home/vitalis/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.0/scala-library-2.13.0-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tags": [
+            "library"
+        ]
+    }
+}
